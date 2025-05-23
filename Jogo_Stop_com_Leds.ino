@@ -20,14 +20,17 @@ void loop() {
     digitalWrite(x, HIGH);
     delay(tempo);
 
-    if (digitalRead(13) == HIGH) {
+    if (digitalRead(13) == 1) {
       while (digitalRead(13));
 
-      if (x == 7) {
-        nivel += 1;
+      if (x == 8) {
+        nivel = nivel + 1;
         Serial.print("Nivel --> ");
         Serial.println(nivel);
-        tempo -= 100;
+        tempo -= 50;
+        if(nivel == 10){
+          Serial.println("Você ganhou!");
+        }
       } else {
         Serial.println("GAME OVER");
         game_over();
@@ -47,14 +50,17 @@ void loop() {
     delay(tempo);
     digitalWrite(x, LOW);
 
-    if (digitalRead(13) == HIGH) {
+    if (digitalRead(13) == 1) {
       while (digitalRead(13));
 
-      if (x == 7) {
-        nivel += 1;
+      if (x == 8) {
+        nivel = nivel + 1;
         Serial.print("Nivel --> ");
         Serial.println(nivel);
-        tempo -= 100;
+        tempo -= 50;
+        if(nivel == 10){
+          Serial.println("Você ganhou!");
+        }
       } else {
         Serial.println("GAME OVER");
         game_over();
