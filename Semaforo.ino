@@ -1,9 +1,5 @@
-// Programa : Pisque um LED
-// Autor : MakerHero
- 
 void setup()
 {
-  //Define a porta do led como saida
   pinMode(11, OUTPUT);
 }
  
