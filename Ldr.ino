@@ -1,7 +1,6 @@
 int led = 10; //Atribui o valor 10 a variável led int ldr = A0; //Atribui A0 a variável ldr
 int valorldr = 0;//Declara a variável valorldr como inteiro
 
-
 void setup() {
 
 pinMode (led, OUTPUT); //Define led (pino digital 10) como saída pinMode (ldr, INPUT); //Define ldr (pino analógico A0) como saída
