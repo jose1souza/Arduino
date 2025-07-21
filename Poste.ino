@@ -1,5 +1,3 @@
-// C++ code
-//
 int poste = 0;
 
 void setup()
@@ -16,5 +14,5 @@ void loop()
   } else {
     digitalWrite(11, LOW);
   }
-  delay(10); // Delay a little bit to improve simulation performance
+  delay(10); 
 }
